@@ -562,18 +562,21 @@ function Insights() {
     {
       slug: "2026-global-talent-outlook",
       tag: "Report",
+      image: "/insights/research-signals.png",
       t: "The 2026 Global Talent Outlook",
       d: "Signals from 12,000 hires across 42 markets — where salaries, skills and supply are moving.",
     },
     {
       slug: "ai-native-gcc-playbook",
       tag: "Playbook",
+      image: "/insights/hiring-playbook.png",
       t: "Building an AI-native GCC from day one",
       d: "A 90-day blueprint for scaling engineering capability centers with AI at the core.",
     },
     {
       slug: "meridian-rpo-case-study",
       tag: "Case Study",
+      image: "/insights/talent-report.png",
       t: "How Meridian cut time-to-hire by 47%",
       d: "Inside the RPO transformation that reshaped a 14-country hiring engine.",
     },
@@ -598,14 +601,13 @@ function Insights() {
           {posts.map((p, i) => (
             <Reveal key={p.t} delay={i}>
               <Link to="/insights/$slug" params={{ slug: p.slug }} className="group block h-full rounded-2xl border border-border bg-white overflow-hidden hover:shadow-elevated transition-all">
-                <div className="aspect-[16/10] bg-gradient-to-br from-primary via-accent to-secondary relative overflow-hidden">
-                  <div
-                    className="absolute inset-0 opacity-30"
-                    style={{
-                      backgroundImage:
-                        "radial-gradient(circle at 30% 20%, rgba(255,255,255,0.4), transparent 50%)",
-                    }}
+                <div className="aspect-[16/10] bg-secondary relative overflow-hidden">
+                  <img
+                    src={p.image}
+                    alt=""
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/55 via-transparent to-transparent" />
                   <span className="absolute top-4 left-4 rounded-full bg-white/90 text-xs font-semibold text-secondary px-3 py-1">
                     {p.tag}
                   </span>

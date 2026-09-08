@@ -62,7 +62,13 @@ function InsightsIndex() {
                   params={{ slug: p.slug }}
                   className="group block h-full rounded-2xl border border-border bg-white overflow-hidden hover:shadow-elevated transition-all"
                 >
-                  <div className="aspect-[16/10] bg-gradient-to-br from-primary via-accent to-secondary relative overflow-hidden">
+                  <div className="aspect-[16/10] bg-secondary relative overflow-hidden">
+                    <img
+                      src={p.image}
+                      alt=""
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-secondary/55 via-transparent to-transparent" />
                     <span className="absolute top-4 left-4 rounded-full bg-white/90 text-xs font-semibold text-secondary px-3 py-1">
                       {p.tag}
                     </span>

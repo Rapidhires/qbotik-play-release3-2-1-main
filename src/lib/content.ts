@@ -88,6 +88,7 @@ export const CASE_STUDIES: CaseStudy[] = [
 export interface Insight {
   slug: string;
   tag: string;
+  image: string;
   title: string;
   summary: string;
   readTime: string;
@@ -99,6 +100,7 @@ export const INSIGHTS: Insight[] = [
   {
     slug: "2026-global-talent-outlook",
     tag: "Report",
+    image: "/insights/research-signals.png",
     title: "The 2026 Global Talent Outlook",
     summary:
       "Signals from 12,000 hires across 42 markets — where salaries, skills and supply are moving.",
@@ -126,6 +128,7 @@ export const INSIGHTS: Insight[] = [
   {
     slug: "ai-native-gcc-playbook",
     tag: "Playbook",
+    image: "/insights/hiring-playbook.png",
     title: "Building an AI-native GCC from day one",
     summary:
       "A 90-day blueprint for scaling engineering capability centers with AI at the core.",
@@ -153,6 +156,7 @@ export const INSIGHTS: Insight[] = [
   {
     slug: "meridian-rpo-case-study",
     tag: "Case Study",
+    image: "/insights/talent-report.png",
     title: "How Meridian cut time-to-hire by 47%",
     summary:
       "Inside the RPO transformation that reshaped a 14-country hiring engine.",
