@@ -86,7 +86,7 @@ function Hero() {
           <Reveal delay={4}>
             <dl className="mt-12 grid grid-cols-3 gap-6 max-w-lg">
               {[
-                { k: 270, s: "+", label: "Enterprise clients" },
+                { k: 125, s: "+", label: "Enterprise clients" },
                 { k: 42, s: "", label: "Countries served" },
                 { k: 12, s: "K+", label: "Placements / year" },
               ].map((s) => (
